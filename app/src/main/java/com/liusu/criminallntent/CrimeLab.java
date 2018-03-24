@@ -19,7 +19,7 @@ public class CrimeLab {
         //测试用数据
         for (int i=0;i<100;i++){
             Crime crime=new Crime();
-            crime.setmTitle("第"+i+"Crime");
+            crime.setmTitle("第"+i+"个Crime");
             crime.setmSolved(i%4==0);
             mCrimes.add(crime);
         }

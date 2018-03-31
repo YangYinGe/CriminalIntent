@@ -69,10 +69,12 @@ public class CrimePagerActivity extends AppCompatActivity {
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 if (mViewPager.getCurrentItem() == 0) {
                     mButton_first.setEnabled(false);
-                } else if (mViewPager.getCurrentItem() == mCrimes.size() - 1) {
-                    mButton_last.setEnabled(false);
                 } else {
                     mButton_first.setEnabled(true);
+                }
+                if (mViewPager.getCurrentItem() == mCrimes.size() - 1) {
+                    mButton_last.setEnabled(false);
+                } else {
                     mButton_last.setEnabled(true);
                 }
             }

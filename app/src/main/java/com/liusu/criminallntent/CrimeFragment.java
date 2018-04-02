@@ -2,6 +2,7 @@ package com.liusu.criminallntent;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -89,7 +90,7 @@ public class CrimeFragment extends Fragment {
         mDeleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //FragmentManager manager=getFragmentManager();
+                //删除
                 CrimeLab.get(getActivity()).deleteCrime(mCrime);
                 getActivity().onBackPressed();
             }
@@ -121,4 +122,13 @@ public class CrimeFragment extends Fragment {
     private void updateDate() {
         mDateButton.setText(mCrime.getmDate().toString());
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        CrimeLab.get(getActivity()).updateCrime(mCrime);
+    }
+
+
 }

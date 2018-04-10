@@ -1,4 +1,4 @@
-package com.liusu.criminallntent;
+package com.liusu.criminalIntent;
 
 import org.junit.Test;
 

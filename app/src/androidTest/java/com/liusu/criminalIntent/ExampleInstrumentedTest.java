@@ -1,4 +1,4 @@
-package com.liusu.criminallntent;
+package com.liusu.criminalIntent;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,10 +1,10 @@
-package com.liusu.criminallntent.DateBase;
+package com.liusu.criminalIntent.DateBase;
 
 import android.database.Cursor;
 import android.database.CursorWrapper;
 
-import com.liusu.criminallntent.Crime;
-import com.liusu.criminallntent.DateBase.CrimeDbSchema.CrimeTable;
+import com.liusu.criminalIntent.Crime;
+import com.liusu.criminalIntent.DateBase.CrimeDbSchema.CrimeTable;
 
 import java.util.Date;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.liusu.criminallntent;
+package com.liusu.criminalIntent;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

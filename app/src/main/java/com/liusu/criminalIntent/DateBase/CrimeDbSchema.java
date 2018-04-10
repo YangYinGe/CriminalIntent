@@ -1,4 +1,4 @@
-package com.liusu.criminallntent.DateBase;
+package com.liusu.criminalIntent.DateBase;
 
 public class CrimeDbSchema {
     public static final class CrimeTable {

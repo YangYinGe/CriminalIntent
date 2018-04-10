@@ -1,15 +1,16 @@
-package com.liusu.criminallntent;
+package com.liusu.criminalIntent;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.liusu.criminallntent.DateBase.CrimeBaseHelper;
-import com.liusu.criminallntent.DateBase.CrimeCursorWrapper;
-import com.liusu.criminallntent.DateBase.CrimeDbSchema;
-import com.liusu.criminallntent.DateBase.CrimeDbSchema.CrimeTable;
+import com.liusu.criminalIntent.DateBase.CrimeBaseHelper;
+import com.liusu.criminalIntent.DateBase.CrimeCursorWrapper;
+import com.liusu.criminalIntent.DateBase.CrimeDbSchema;
+import com.liusu.criminalIntent.DateBase.CrimeDbSchema.CrimeTable;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -67,6 +68,11 @@ public class CrimeLab {
         } finally {
             cursorWrapper.close();
         }
+    }
+
+    public File getPhotoFile(Crime crime){
+        File filesDir=mContext.getFilesDir();
+        return new File(filesDir,crime.getPhotoFilename());
     }
 
     private static ContentValues getContentValues(Crime crime) {

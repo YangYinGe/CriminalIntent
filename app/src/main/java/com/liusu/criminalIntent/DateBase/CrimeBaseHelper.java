@@ -1,10 +1,10 @@
-package com.liusu.criminallntent.DateBase;
+package com.liusu.criminalIntent.DateBase;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.liusu.criminallntent.DateBase.CrimeDbSchema.CrimeTable;
+import com.liusu.criminalIntent.DateBase.CrimeDbSchema.CrimeTable;
 
 public class CrimeBaseHelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
